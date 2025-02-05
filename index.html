@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                .flex-title{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: lightgray;
+                }
+
+                .flex-navbar{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    padding-top: 20px;
+                }
+
+                .a-navbar{
+                    text-decoration: none;
+                    color: gray;
+                    font: montserrat, sans serif;
+                }
+            
+                .flex-row{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+            
+                .flex-column{
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 20px;
+                    width: 33%;
+                    border-style: groove;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 40px;
+                    margin-right: 20px;
+                }
+                
+                h1{
+                    margin-left: 20px;
+                    font-size: 50px;
+                }
+                
+                h2{
+                    text-align: center;
+                    margin-top: 50px;
+                    font-size: 50px;
+                }
+                
+                h3{justify-content: center;}
+
+                .h3-title, .h1-title, .h2-title{
+                    justify-content: center; 
+                    margin-top: 0px;
+                    font: montserrat, sans serif;
+                    color: green;
+                }
+
+                .p-description{
+                    font: arial;
+                    justify-content: center;
+                }
+                
+            button{
+                    text-align: center;
+                    border-radius: 20px;
+                    transition: 0.4s;
+                    cursor: pointer;
+                    margin-bottom: 10px; 
+                    background-color: lightgray;
+                    border: none;
+                }
+                
+                button:hover{background-color: yellow;}
+
+                .button-navbar{
+                    text-align: center;
+                    border-radius: 20px;
+                    background-color: yellow;
+                    font: montserrat, sans serif;
+                }
+				
+				.image-fix{
+					position: fixed;
+					bottom: 0px;
+					left:10%;
+					width: 5%;
+					height: 5%;
+					
+				}
+				
+				@media screen and (max-width: 600px){
+					.flex-row{
+					flex-direction: column;
+					margin-bottom: 10px;}
+				}
+
+            </style>
+        </head>
+
+        <body>
+            <div style="background-image: url(https://www.yvonneartecontemporanea.com/wp-content/uploads/2019/12/Sasso-in-sasso-2019-elemento-in-pietra-riprogrammato-pietra-dolomia-cm-27-x-25-x-16.jpg);">
+                <div class="flex-navbar">
+                    <a href="https://aulab.it/" class="a-navbar">
+                        <img src="https://aulab.it/wp-content/uploads/2023/04/aulab-logo.svg" alt="image" width="75%" height="75%">
+                    </a>
+                    <a href="" class="a-navbar"> CORSI GRATUITI</a>
+                    <a href="" class="a-navbar"> CORSI </a>
+                    <a href="" class="a-navbar"> PERCHÉ AULAB?</a>
+                    <a href="https://aulab.it/guide" class="a-navbar"> GUIDE </a>
+                    <a href="https://aulab.it/blog" class="a-navbar"> BLOG </a>
+                    <a href="https://aulab.it/lavora-con-noi" class="a-navbar"> LAVORA CON NOI</a>
+                    <a href="" class="a-navbar"> SEI UN' AZIENDA?</a>
+                    <a href="https://aulab.it/iscriviti" class="a-navbar">
+                        <button class="button-navbar"> <b>ISCRIVITI</b> </button>
+                    </a>
+                </div>
+				<img src="https://aulab-hackademy.s3.eu-south-1.amazonaws.com/attachments/qWVDMqzBgLMA5fYE841IBmjHqUVL0AdJ6xzBR76L.png" alt="image" class="image-fixfix"/>
+                <div class="flex-title">
+                    <h1 class="h1-title"> Blog </h1>
+                    <h3 class="h3-title">Home >> Blog</h3>
+                </div>
+                <div>
+                    <h2 class="h2-title" style="margin-top: 20px;"> Articoli in evidenza </h2>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/07/database-cover-1-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Come diventare Data Analyst: la roadmap da seguire </h3>
+                       <aside style="background-color: yellow;">
+                            <p class="p-description"> La figura del Data Analyst è diventata una delle più ricercate nel mondo aziendale degli ultimi anni. 
+                                In un contesto in cui i dati sono il nuovo “petrolio” dell’economia digitale, le aziende si trov… </p>
+                       </aside>
+                        <a href="https://aulab.it/come-diventare-data-analyst-la-roadmap-da-seguire/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2015/03/Chat-gpt-10-prompts-per-web-developer-768x432-1.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> 20 task che Chat GPT può svolgere in pochi secondi</h3>
+                        <p class="p-description"> Negli ultimi anni, l’intelligenza artificiale (AI) ha fatto passi da gigante, diventando uno strumento indispensabile per semplificare e velocizzare moltissime attività quotidiane. Tra i vari strumen…</p>
+                        <a href="https://aulab.it/20-task-che-chat-gpt-puo-svolgere-in-pochi-secondi/">
+                            <button type="button">
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/04/FREELANCE-DEVELOPER-LE-OPPORTUNITA-PER-I-LIBERI-PROFESSIONISTI-cover-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Cos’è la cybersecurity e quali opportunità offre in italia?</h3>
+                        <p class="p-description"> Nell’era digitale in cui viviamo, la sicurezza informatica, meglio nota come cybersecurity, è diventata una priorità fondamentale per individui, aziende e governi. Ne sentiamo sempre più parlare ma…</p>
+                        <a href="https://aulab.it/cose-la-cybersecurity-e-quali-opportunita-offre-in-italia/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/07/database-cover-1-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Cosa sono i Big Data Analytics</h3>
+                        <p class="p-description"> Nel mondo digitale di oggi, i dati sono diventati una risorsa fondamentale per le aziende di ogni settore. La quantità di dati generati ogni giorno è impressionante, e la capacità di analizzarli e …</p>
+                        <a href="https://aulab.it/cosa-sono-i-big-data-analytics/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/07/Wordpress-Da-HTML-a-CMS-1024x576-1-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Come creare un blog con wordpress</h3>
+                        <p class="p-description"> Creare un blog con WordPress è un’ottima scelta per chi desidera condividere le proprie idee, passioni o competenze con il mondo. WordPress è una piattaforma versatile e user-friendly che permette a…</p>
+                        <a href="https://aulab.it/come-creare-un-blog-con-wordpress/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2015/03/Chat-gpt-10-prompts-per-web-developer-768x432-1.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> OpenAI API e il linguaggio Java</h3>
+                        <p class="p-description"> L’integrazione delle API di OpenAI con il linguaggio Java rappresenta una combinazione potente e versatile per sviluppare applicazioni basate su intelligenza artificiale (AI). In questo articolo, espl…</p>
+                        <a href="https://aulab.it/openai-api-e-il-linguaggio-java/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/04/FREELANCE-DEVELOPER-LE-OPPORTUNITA-PER-I-LIBERI-PROFESSIONISTI-cover-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> 5 concetti chiave della cybersecurity</h3>
+                        <p class="p-description"> La cybersecurity, o sicurezza informatica, è un ramo dell’informatica di grande rilevanza nel periodo storico in cui viviamo. Perchè la cyber-security è così importante? In questo articolo esplo…</p>
+                        <a href="https://aulab.it/5-concetti-chiave-della-cybersecurity/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/05/Senior-developer-quando-e-come-si-diventa-cover-cover-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Come creare un chatbot con l’ intelligenza artificiale</h3>
+                        <p class="p-description"> Negli ultimi anni, i chatbot con l’intelligenza artificiale (un esempio ne è ChatGPT) sono diventati strumenti molto utili per le aziende che desiderano migliorare il servizio clienti, automatizzare …</p>
+                        <a href="https://aulab.it/come-creare-un-chatbot-con-l-intelligenza-artificiale/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/10/UI-design-10-regole-per-uninterfaccia-funzionale-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Cos è la legge di Miller e che ruolo ha nell’ UX design</h3>
+                        <p class="p-description"> In un contesto ampio come quello dell’UX/UI design, l’obiettivo principale è  quello di creare esperienze utente fluide e intuitive: la Legge di Miller emerge, in questa cornice, come un principio f…</p>
+                        <a href="https://aulab.it/cos-e-la-legge-di-miller-e-che-ruolo-ha-nell-ux-design/"> 
+                            <button typre> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/03/Come-diventare-un-front-end-developer-4-cover-768x432.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> 15 utilissimi tool per un frontend developer</h3>
+                        <p class="p-description"> Il mondo dello sviluppo front end è supportato da una forte community legata all’open source e allo sviluppo che ne consegue. Per un frontend developer, rimanere aggiornato sugli strumenti più eff…</p>
+                        <a href="https://aulab.it/15-utilissimi-tool-per-un-frontend-developer/"> 
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2023/07/database-cover-1-1024x576.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Data Analyst vs Data Scientist: quali sono le differenze?</h3>
+                        <p class="p-description"> Nel panorama odierno dominato dai dati, termini come data science e data analysis vengono spesso utilizzati in modo intercambiabile, creando confusione su cosa effettivamente differenzi questi due amb…</p>
+                        <a href="https://aulab.it/data-analyst-vs-data-scientist-quali-sono-le-differenze/">
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex-column">
+                        <img src="https://aulab.it/wp-content/uploads/2015/03/Chat-gpt-10-prompts-per-web-developer-768x432-1.jpg" alt="image" width="100%" height="100%">
+                        <h3 class="h3-title"> Codeium AI VS Copilot: quale scegliere</h3>
+                        <p class="p-description"> Nel mondo della programmazione informatica e del web development, l’introduzione di tools basati sull’intelligenza artificiale (AI) ha rivoluzionato il modo in cui i developer scrivono codice e svilup…</p>
+                        <a href="https://aulab.it/codeium-ai-vs-copilot-quale-scegliere/">
+                            <button type="button"> 
+                                <b>Leggi tutto >></b> 
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
